@@ -95,7 +95,12 @@ fun App() {
                 composable(Screen.Home.route) {
                     val viewModel: HomeViewModel = viewModel { HomeViewModel() }
                     val state by viewModel.uiState.collectAsState()
-                    HomeScreen(state = state)
+                    HomeScreen(
+                        state = state,
+                        onSignInClicked = { viewModel.onSignInClicked() },
+                        onDismissDialog = { viewModel.onDismissDialog() },
+                        onConfirmSignIn = { viewModel.performYouTubeSignIn() }
+                    )
                 }
                 composable(Screen.Settings.route) {
                     SettingsScreen(

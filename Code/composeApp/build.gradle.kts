@@ -39,6 +39,8 @@ kotlin {
             implementation(libs.navigation.compose)
             implementation(libs.lifecycle.viewmodel.compose)
             implementation(compose.materialIconsExtended)
+            implementation(libs.google.api.services.youtube)
+            implementation(libs.google.api.client)
         }
         
         getByName("desktopMain") {

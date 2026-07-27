@@ -1,5 +1,4 @@
 
-
 # Setup
 
 - Create a blank app
@@ -9,7 +8,7 @@
 - Create a multi-page app using Kotlin, Jetpack Compose, and the MVVM design pattern. Use stateless composables. Create a master page for hosting all other pages. The bottom of this page will include a navigation bar. All pages will be hosted here.
 
 App Name:     YouTube Upload Manager 
-Package Name: com.cyberfeedforward.youtubemanager
+Package Name: com.cyberfeedforward.youtubemanager1
 
 # Settings
 
@@ -22,7 +21,14 @@ Package Name: com.cyberfeedforward.youtubemanager
 - Add feature_graphic.png to the About screen
 - Make the image 50% when on a tablet
 
-## 
+## Home
+
+- Add a sign-in button to the middle of the home screen. 
+
+- When the sign-in button is clicked, open a dialog that allows users to sign into the YouTube api that allows them to manage their uploaded videos.
+
+
+
 
 
 
