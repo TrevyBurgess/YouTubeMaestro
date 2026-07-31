@@ -7,8 +7,8 @@
 - Make project compliant with AGP 9.0 standards
 - Create a multi-page app using Kotlin, Jetpack Compose, and the MVVM design pattern. Use stateless composables. Create a master page for hosting all other pages. The bottom of this page will include a navigation bar. All pages will be hosted here.
 
-App Name:     YouTube Upload Manager 
-Package Name: com.cyberfeedforward.youtubemanager1
+App Name:     YouTube Video Manager 
+Package Name: com.cyberfeedforward.youtubevideomanager
 
 # Settings
 
@@ -26,11 +26,5 @@ Package Name: com.cyberfeedforward.youtubemanager1
 - Add a sign-in button to the middle of the home screen. 
 
 - When the sign-in button is clicked, open a dialog that allows users to sign into the YouTube api that allows them to manage their uploaded videos.
-
-
-
-
-
-
 
 

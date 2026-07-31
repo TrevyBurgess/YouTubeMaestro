@@ -7,7 +7,7 @@ plugins {
 
 kotlin {
     android {
-        namespace = "com.cyberfeedforward.youtubemanager.shared"
+        namespace = "com.cyberfeedforward.youtubevideomanager.shared"
         compileSdk = 37
         minSdk = 30
         
@@ -53,7 +53,7 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "com.cyberfeedforward.youtubemanager.MainKt"
+        mainClass = "com.cyberfeedforward.youtubevideomanager.MainKt"
 
         nativeDistributions {
             targetFormats(org.jetbrains.compose.desktop.application.dsl.TargetFormat.Dmg, org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi, org.jetbrains.compose.desktop.application.dsl.TargetFormat.Deb)

@@ -5,23 +5,26 @@ plugins {
 }
 
 android {
-    namespace = "com.cyberfeedforward.youtubemanager"
+    namespace = "com.cyberfeedforward.youtubevideomanager"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.cyberfeedforward.youtubemanager"
+        applicationId = "com.cyberfeedforward.youtubevideomanager"
         minSdk = 30
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
-        
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+
+
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "src/main/keepRules/rules.keep")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "src/main/keepRules/rules.keep")
         }
     }
     

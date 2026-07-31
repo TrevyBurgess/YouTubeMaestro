@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubemanager
+package com.cyberfeedforward.youtubevideomanager
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -21,14 +21,14 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.cyberfeedforward.youtubemanager.navigation.Screen
-import com.cyberfeedforward.youtubemanager.ui.screens.AboutScreen
-import com.cyberfeedforward.youtubemanager.ui.screens.HomeScreen
-import com.cyberfeedforward.youtubemanager.ui.screens.SettingsScreen
-import com.cyberfeedforward.youtubemanager.viewmodel.AboutViewModel
-import com.cyberfeedforward.youtubemanager.viewmodel.HomeViewModel
-import com.cyberfeedforward.youtubemanager.viewmodel.SettingsViewModel
-import com.cyberfeedforward.youtubemanager.viewmodel.ThemeMode
+import com.cyberfeedforward.youtubevideomanager.navigation.Screen
+import com.cyberfeedforward.youtubevideomanager.ui.screens.AboutScreen
+import com.cyberfeedforward.youtubevideomanager.ui.screens.HomeScreen
+import com.cyberfeedforward.youtubevideomanager.ui.screens.SettingsScreen
+import com.cyberfeedforward.youtubevideomanager.viewmodel.AboutViewModel
+import com.cyberfeedforward.youtubevideomanager.viewmodel.HomeViewModel
+import com.cyberfeedforward.youtubevideomanager.viewmodel.SettingsViewModel
+import com.cyberfeedforward.youtubevideomanager.viewmodel.ThemeMode
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
@@ -99,7 +99,8 @@ fun App() {
                         state = state,
                         onSignInClicked = { viewModel.onSignInClicked() },
                         onDismissDialog = { viewModel.onDismissDialog() },
-                        onConfirmSignIn = { viewModel.performYouTubeSignIn() }
+                        onConfirmSignIn = { viewModel.performYouTubeSignIn() },
+                        onAuthUrlHandled = { viewModel.onAuthUrlHandled() }
                     )
                 }
                 composable(Screen.Settings.route) {

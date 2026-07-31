@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubemanager.ui.screens
+package com.cyberfeedforward.youtubevideomanager.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,8 +17,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.cyberfeedforward.youtubemanager.viewmodel.SettingsUiState
-import com.cyberfeedforward.youtubemanager.viewmodel.ThemeMode
+import com.cyberfeedforward.youtubevideomanager.viewmodel.SettingsUiState
+import com.cyberfeedforward.youtubevideomanager.viewmodel.ThemeMode
 
 @Composable
 fun SettingsScreen(

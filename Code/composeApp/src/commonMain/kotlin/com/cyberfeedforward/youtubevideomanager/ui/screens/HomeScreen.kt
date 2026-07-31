@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubemanager.ui.screens
+package com.cyberfeedforward.youtubevideomanager.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -22,7 +22,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.cyberfeedforward.youtubemanager.viewmodel.HomeUiState
+import com.cyberfeedforward.youtubevideomanager.viewmodel.HomeUiState
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.ui.platform.LocalUriHandler
 
 @Composable
 fun HomeScreen(
@@ -30,8 +32,18 @@ fun HomeScreen(
     onSignInClicked: () -> Unit,
     onDismissDialog: () -> Unit,
     onConfirmSignIn: () -> Unit,
+    onAuthUrlHandled: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val uriHandler = LocalUriHandler.current
+
+    LaunchedEffect(state.authUrl) {
+        state.authUrl?.let { url ->
+            uriHandler.openUri(url)
+            onAuthUrlHandled()
+        }
+    }
+
     Box(modifier = modifier.fillMaxSize()) {
         Column(
             modifier = Modifier.fillMaxSize().padding(16.dp),

@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubemanager.viewmodel
+package com.cyberfeedforward.youtubevideomanager.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,11 +8,15 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
+import com.cyberfeedforward.youtubevideomanager.util.AuthUtils
+import com.cyberfeedforward.youtubevideomanager.util.Config
+
 data class HomeUiState(
     val title: String = "Home Screen",
     val greeting: String = "Welcome to the Home Page!",
     val isSignInDialogOpen: Boolean = false,
-    val isAuthenticating: Boolean = false
+    val isAuthenticating: Boolean = false,
+    val authUrl: String? = null
 )
 
 class HomeViewModel : ViewModel() {
@@ -28,22 +32,21 @@ class HomeViewModel : ViewModel() {
     }
 
     fun performYouTubeSignIn() {
+        _uiState.value = _uiState.value.copy(isSignInDialogOpen = false)
+        val url = AuthUtils.getAuthUrl(Config.GOOGLE_CLIENT_ID, Config.REDIRECT_URI)
+        _uiState.value = _uiState.value.copy(authUrl = url)
+    }
+
+    fun onAuthUrlHandled() {
+        _uiState.value = _uiState.value.copy(authUrl = null, isAuthenticating = true)
+        
+        // Simulating the flow continues after browser opens. 
+        // In a real app, you'd wait for a redirect back to the app/server.
         viewModelScope.launch {
-            _uiState.value = _uiState.value.copy(
-                isSignInDialogOpen = false,
-                isAuthenticating = true
-            )
-            
-            // TODO: Implement actual YouTube OAuth2 sign-in flow
-            // This would involve opening a browser and handling the redirect
-            println("Starting YouTube Sign-In flow with management scopes...")
-            
-            // Simulating network delay for authentication
-            delay(2000)
-            
+            delay(5000) // Simulating wait for user to sign in in browser
             _uiState.value = _uiState.value.copy(
                 isAuthenticating = false,
-                greeting = "Signed in successfully! You can now manage your videos."
+                greeting = "Browser opened for sign-in. Check your browser to complete the process."
             )
         }
     }

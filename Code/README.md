@@ -1,4 +1,4 @@
-# YouTube Manager
+# YouTube Video Manager
 
 YouTube is an amazing platform for publishing content.
 
