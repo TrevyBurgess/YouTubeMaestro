@@ -1,4 +1,4 @@
-# YouTube Manager
+# YouTube Video Manager
 
 YouTube is an amazing platform for publishing content.
 
@@ -9,3 +9,13 @@ This tool is designed to automate some of these tasks.
 [App ](Overview.md)
 
 [Vibe Code Commands](VibeCodeCommands.md)
+
+
+# ss
+
+App Name:       YouTube Video Management Suite
+Project Name:   cyber-feed-forward-d
+Organization:   
+
+
+
