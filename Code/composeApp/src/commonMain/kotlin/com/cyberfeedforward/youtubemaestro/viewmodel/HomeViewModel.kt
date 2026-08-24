@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager.viewmodel
+package com.cyberfeedforward.youtubemaestro.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,8 +8,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-import com.cyberfeedforward.youtubevideomanager.util.AuthUtils
-import com.cyberfeedforward.youtubevideomanager.util.Config
+import com.cyberfeedforward.youtubemaestro.util.AuthUtils
+import com.cyberfeedforward.youtubemaestro.util.Config
 
 data class HomeUiState(
     val title: String = "Home Screen",

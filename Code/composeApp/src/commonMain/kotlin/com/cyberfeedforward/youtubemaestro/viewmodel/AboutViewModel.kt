@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager.viewmodel
+package com.cyberfeedforward.youtubemaestro.viewmodel
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

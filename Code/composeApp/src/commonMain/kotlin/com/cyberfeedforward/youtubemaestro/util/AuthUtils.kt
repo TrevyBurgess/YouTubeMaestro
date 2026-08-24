@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager.util
+package com.cyberfeedforward.youtubemaestro.util
 
 object AuthUtils {
     private const val AUTH_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth"

@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager.ui.screens
+package com.cyberfeedforward.youtubemaestro.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -22,7 +22,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.cyberfeedforward.youtubevideomanager.viewmodel.HomeUiState
+import com.cyberfeedforward.youtubemaestro.viewmodel.HomeUiState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.platform.LocalUriHandler
 

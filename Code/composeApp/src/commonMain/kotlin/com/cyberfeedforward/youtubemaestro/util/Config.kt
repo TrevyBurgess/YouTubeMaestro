@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager.util
+package com.cyberfeedforward.youtubemaestro.util
 
 object Config {
     // Replace with your actual Client ID from Google Cloud Console

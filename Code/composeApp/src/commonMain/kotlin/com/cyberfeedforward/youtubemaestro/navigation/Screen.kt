@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager.navigation
+package com.cyberfeedforward.youtubemaestro.navigation
 
 sealed class Screen(val route: String) {
     object Home : Screen("home")

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.cyberfeedforward.youtubevideomanager"
+    namespace = "com.cyberfeedforward.youtubemaestro"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.cyberfeedforward.youtubevideomanager"
+        applicationId = "com.cyberfeedforward.youtubemaestro"
         minSdk = 30
         targetSdk = 37
         versionCode = 1

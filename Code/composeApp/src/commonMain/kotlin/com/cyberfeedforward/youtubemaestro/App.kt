@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager
+package com.cyberfeedforward.youtubemaestro
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -21,14 +21,14 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.cyberfeedforward.youtubevideomanager.navigation.Screen
-import com.cyberfeedforward.youtubevideomanager.ui.screens.AboutScreen
-import com.cyberfeedforward.youtubevideomanager.ui.screens.HomeScreen
-import com.cyberfeedforward.youtubevideomanager.ui.screens.SettingsScreen
-import com.cyberfeedforward.youtubevideomanager.viewmodel.AboutViewModel
-import com.cyberfeedforward.youtubevideomanager.viewmodel.HomeViewModel
-import com.cyberfeedforward.youtubevideomanager.viewmodel.SettingsViewModel
-import com.cyberfeedforward.youtubevideomanager.viewmodel.ThemeMode
+import com.cyberfeedforward.youtubemaestro.navigation.Screen
+import com.cyberfeedforward.youtubemaestro.ui.screens.AboutScreen
+import com.cyberfeedforward.youtubemaestro.ui.screens.HomeScreen
+import com.cyberfeedforward.youtubemaestro.ui.screens.SettingsScreen
+import com.cyberfeedforward.youtubemaestro.viewmodel.AboutViewModel
+import com.cyberfeedforward.youtubemaestro.viewmodel.HomeViewModel
+import com.cyberfeedforward.youtubemaestro.viewmodel.SettingsViewModel
+import com.cyberfeedforward.youtubemaestro.viewmodel.ThemeMode
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme

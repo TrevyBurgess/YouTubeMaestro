@@ -10,11 +10,12 @@ This tool is designed to automate some of these tasks.
 
 [Vibe Code Commands](VibeCodeCommands.md)
 
-
 # ss
 
-App Name:       YouTube Video Management Suite
-Project Name:   cyber-feed-forward-d
+App Name:       YouTube Maestro Creator Suite
+Package name:   com.cyberfeedforward.youtubemaestro
+
+Project Name:   cyber-feed-forward
 Organization:   
 
 

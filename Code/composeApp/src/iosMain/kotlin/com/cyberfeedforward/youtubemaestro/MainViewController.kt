@@ -1,4 +1,4 @@
-package com.cyberfeedforward.youtubevideomanager
+package com.cyberfeedforward.youtubemaestro
 
 import androidx.compose.ui.window.ComposeUIViewController
 
