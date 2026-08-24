@@ -12,7 +12,7 @@ This tool is designed to automate some of these tasks.
 
 # ss
 
-App Name:       YouTube Maestro Creator Suite
+App Name:       YouTube Maestro
 Package name:   com.cyberfeedforward.youtubemaestro
 
 Project Name:   cyber-feed-forward
