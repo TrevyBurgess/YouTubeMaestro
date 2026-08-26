@@ -25,7 +25,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "YouTubeManager"
+rootProject.name = "YouTubeMaestro"
 include(":app")
 include(":composeApp")
  
